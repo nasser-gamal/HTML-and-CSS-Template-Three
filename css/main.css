@@ -28,6 +28,7 @@ ul {
 }
 a {
     text-decoration: none;
+    color: black;
 }
 .container {
     padding-left: 15px;
@@ -175,7 +176,6 @@ content: "";
     align-items: center;
     font-size: 30px;
     font-weight: bold;
-    color: var(--main-color);
 }
 @media (max-width:767px) {
     .header .container .logo {
@@ -289,7 +289,6 @@ content: "";
 .header .container .main-menu .mega-menu .links  li a {
     padding: 15px;
     display: block;
-    color: var(--main-color);
     font-weight: bold;
     font-size: 18px;
 }
@@ -391,7 +390,6 @@ content: "";
 .landing .container .go {
     position: absolute;
     bottom: 40px;
-    color: var(--main-color);
     font-size: 15px;
     transform: translateX(-50%);
     animation-name: go;
@@ -446,7 +444,6 @@ content: "";
 }
 .article .article-content .box .text p {
     margin-top: 10px;
-    color: #777;
     line-height: 1.6;
 }
 .article .article-content .box .info {
@@ -456,12 +453,11 @@ content: "";
     align-content: center;
 }
 .article .article-content .box  .info a {
-    color: var(--main-color);
+    color: black;
     text-transform: capitalize;
     font-weight: bold;
 }
 .article .article-content .box  .info i {
-    color: var(--main-color);
 
     position: relative;
 }
@@ -626,7 +622,6 @@ content: "";
 }
 .feature .feature-content .box .text p {
     font-size: 19px;
-    color: #777;
     line-height: 2;
     margin-top: 40px;
     margin-bottom: 50px;
@@ -751,7 +746,6 @@ content: "";
     margin-bottom: 10px;
 }
 .testimontals .testimonils-content .box p {
-    color: #777;
 }
 .testimontals .testimonils-content .box p:first-of-type {
     margin-bottom: 10px;
@@ -830,10 +824,8 @@ content: "";
 }
 .team-members .team-members-content .box .social i {
     margin-top: 30px;
-    color: #777;
 }
 .team-members .team-members-content .box  .social i:hover{
-    color: var(--main-color);
 }
 .team-members .team-members-content .box .text {
     padding: 20px;
@@ -842,7 +834,6 @@ content: "";
 }
 .team-members .team-members-content .box h4 {
     font-size: 22px;
-    color: var(--main-color);
 }
 .team-members .team-members-content .box p {
     margin-top: 10px;
@@ -889,7 +880,6 @@ content: "";
 .services .services-conntent .box h4 {
     padding: 20px;
     font-size: 25px;
-    color: var(--main-color);
 }
 .services .services-conntent .box i {
     color: #3333;
@@ -931,7 +921,6 @@ content: "";
     padding: 15px 15px 15px 0;
     text-align: right;
     margin-top: 15px;
-    color: var(--main-color);
 }
 /* End Services  */
 /* Start Skills  */
@@ -973,6 +962,7 @@ content: "";
     position: absolute;
     height: 100%;
     background-color: var(--main-color);
+    transition: width 0.3s linear;
 }   
 .skills .skills-content .box::before {
     content: attr(data-prestige);
@@ -981,7 +971,6 @@ content: "";
     position: absolute;
     top: -40px;
     right: 0;
-    color: var(--main-color);
     font-size: 12px;
     font-weight: bold;
     display: flex;
@@ -1055,7 +1044,6 @@ content: "";
     font-size: 22px;
 }
 .works .works-content .col .srv p {
-    color: #777;
     line-height: 1.6;
     margin-top: 10px;
     font-size: 18px;
@@ -1126,9 +1114,8 @@ content: "";
     border-color: var(--main-color);
 }
 .events .events-content .col .time .srv span {
-    font-size: 40px;
+    font-size: 35px;
     font-weight: bold;
-    color: var(--main-color);
     padding-top: 15px;
 }
 .events .events-content .col .time .srv p {
@@ -1151,7 +1138,6 @@ content: "";
 .events .events-content .col .text p {
     margin-top: 15px;
     font-size: 20px;
-    color: #777;
     line-height: 1.6;
 }
 .events form {
@@ -1189,14 +1175,15 @@ content: "";
 .events form input[type="email"]:focus::placeholder {
     opacity: 0;
 }
-.events form input[type="button"] {
+.events form button[type="submit"] {
+    padding: 20px;
+    color: white;
+    background-color: var(--main-color);
+    font-weight: bold;
     outline: none;
     border: none;
     border-radius: 50px;
-    background-color: var(--main-color);
-    color: white;
-    font-weight: bold;
-    padding: 20px;
+    cursor: pointer;
 }
 @media (max-width:767px) {
     .events form input[type="button"] {
@@ -1313,10 +1300,8 @@ content: "";
 .pricing .pricing-content .col .info span {
     font-size: 60px;
     font-weight: bold;
-    color: var(--main-color);
 }
 .pricing .pricing-content .col .info p {
-    color: #777;
 }
 .pricing .pricing-content .col .links {
     position: relative;
@@ -1332,7 +1317,6 @@ content: "";
     content: "\f00c";
     font-weight: 900;
     margin-right: 5px;
-    color: var(--main-color);
     font-size: 18px;
 }
 .pricing .pricing-content .col .links li:not(:last-child) {
@@ -1343,7 +1327,6 @@ content: "";
     margin: 40px auto;
     width: fit-content;
     text-transform: capitalize;
-    color: var(--main-color);
     font-weight: bold;
     border: 2px solid var(--main-color);
     padding: 15px 20px;
@@ -1402,12 +1385,10 @@ content: "";
 .videos .videos-content .col .links li:hover {
     cursor: pointer;
     background-color: #fafafa;
-    color: var(--main-color);
 }
 .videos .videos-content .col .links li span {
     margin-top: 10px;
     font-size: 16px;
-    color: #777;
 }
 .videos .videos-content .col:last-of-type {
     background-color: #eee;
@@ -1505,7 +1486,6 @@ content: "";
 }
 .stats .stats-content .box .text {
     font-size: 20px;
-    color: var(--main-color);
     font-style: italic;
 }
 /* End Stats  */
@@ -1686,7 +1666,6 @@ content: "";
     content: "\F101";
     font-weight: 900;
     margin-right: 10px;
-    color: var(--main-color);
 }
 .footer .container .footer-content .col-two .links li a:hover  {
     padding-left: 20px;
@@ -1708,7 +1687,6 @@ content: "";
 .footer .container .footer-content .col-three .box  i {
     margin-right: 12px;
     margin-top: 15px;
-    color: var(--main-color);
     font-size: 25px;
 } 
 .footer .container .footer-content .col-three .box .info {
